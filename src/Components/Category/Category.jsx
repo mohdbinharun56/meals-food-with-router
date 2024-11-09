@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 const Category = ({ category }) => {
     console.log(category);
     const { strCategoryThumb, strCategory, strCategoryDescription } = category;
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     // const handleMeals = (strCategory) =>{
     //     navigate(`/menu/s=${strCategory}` );

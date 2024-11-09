@@ -14,7 +14,10 @@ const Menu = () => {
             <h1 className="text-4xl text-center font-bold font-serif mt-10">Meals of {strCategory}</h1>
             <div>
                 {
-                    meals.map(meal=><MenuCard key={meal.idMeal} meal={meal}></MenuCard>)
+                   meals? meals.map(meal=><MenuCard key={meal.idMeal} meal={meal}></MenuCard>) : 
+                   <div className="text-5xl grid place-items-center">
+                     <p>Comming Soon</p>
+                   </div>
                 }
             </div>
         </div>

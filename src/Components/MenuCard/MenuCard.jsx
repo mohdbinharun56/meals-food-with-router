@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 
 const MenuCard = ({meal}) => {
     console.log(meal);
-    const {strMeal,strArea,strMealThumb,strYoutube} = meal;
+    const {strMeal,strArea,strMealThumb,strYoutube} = meal || 'Comming Soon!';
     return (
         <div>
             <img src={strMealThumb} alt={strMeal} />
