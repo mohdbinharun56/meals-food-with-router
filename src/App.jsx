@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom"
-import Header from "./Components/Header/Header"
+// import Header from "./Components/Header/Header"
 
 function App() {
 
   return (
     <>
       <div className="">
-        <div className="flex justify-between items-center my-10 mx-40">
+        {/* <div className="flex justify-between items-center my-10 mx-40">
           <h1>Restaurant</h1>
           <Header></Header>
-        </div>
+        </div> */}
         <div>
           <Outlet></Outlet>
         </div>
