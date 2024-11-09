@@ -9,6 +9,7 @@ const MenuCard = ({meal}) => {
             <h3>{strMeal}</h3>
             <small>{strArea}</small>
             <a href={strYoutube}><span>See Videos</span></a>
+            <button className='w-full mt-10 md:mt-0 bg-green-500 p-3 rounded-full hover:bg-green-800 duration-1000 hover:text-white font-sans font-semibold'>Add To Cart</button>
         </div>
     );
 };
