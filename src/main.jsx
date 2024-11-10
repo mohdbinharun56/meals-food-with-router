@@ -6,6 +6,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Home from './Components/Home/Home.jsx'
 import Category from './Components/Categories/Categories.jsx'
 import Menu from './Components/Menu/Menu.jsx'
+import Signup from './Components/SignUp/Signup.jsx'
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
         path: '/:strCategory',
         loader: ({params})=>fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${params.strCategory}`),
         element: <Menu></Menu>
+      },
+      {
+        path: '/signup',
+        element: <Signup></Signup>
       }
     ]
   }
